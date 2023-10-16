@@ -1,3 +1,8 @@
 <h1>This is HOST application</h1>
 
-<router-outlet></router-outlet>
+<button (click)="toggleCounterApp()">Show Counter</button>
+<div *ngIf="showCounterApp">
+  <!-- Render the counter app here -->
+  <!-- <app-counter></app-counter> -->
+  <router-outlet></router-outlet>
+</div>
